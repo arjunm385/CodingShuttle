@@ -22,6 +22,6 @@ public class MaxAbsoluteDiff {
             maxNeg = Math.max(maxNeg, a[i] - i);
         }
 
-        return Math.max(Math.abs(maxPos - minPos), Math.abs(maxNeg - minNeg));
+        return Math.max(maxPos - minPos, maxNeg - minNeg);
     }
 }
