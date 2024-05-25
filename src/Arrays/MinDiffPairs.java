@@ -22,12 +22,8 @@ public class MinDiffPairs {
 
         List<List<Integer>> list = new ArrayList<>();
         for(int i=0; i<arr.length-1; i++) {
-            if(arr[i+1] - arr[i] == min) {
-                List<Integer> l = new ArrayList<>();
-                l.add(arr[i]);
-                l.add(arr[i+1]);
-                list.add(l);
-            }
+            if(arr[i+1] - arr[i] == min)
+                list.add(List.of(arr[i], arr[i+1]));
         }
 
         return list;
